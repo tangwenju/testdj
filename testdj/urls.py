@@ -12,13 +12,14 @@ Class-based views
 Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
+    3. admin 1972475890x 863109351@qq.com
 """
 from django.conf.urls import url
 from django.contrib import admin
 from . import  view,testdb,search,search2
 
 urlpatterns = [
-    # url(r'^admin/', admin.site.urls),
+    url(r'^admin/', admin.site.urls),
     url(r'^hello$', view.hello),
     url(r'^testdb$', testdb.testdb),
     url(r'^search_form$', search.search_form),
